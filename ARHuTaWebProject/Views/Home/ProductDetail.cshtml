@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html/>
+
+<html5>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>@ViewBag.Title - Product Detail</title>
+        <link href="~/Content/MainSite.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="detail">
+            <div class="image-product">
+                <img src="~/Content/Images/t-shirt-2.jpg"/>
+            </div>
+            <div class="list-image-product">
+                @for (int i = 0; i < 3; i++)
+                {
+                    <a href="">
+                        <img src="~/Content/Images/t-shirt-3.jpg"/>
+                    </a>
+                }
+            </div>
+            <div class="info-product">
+                <h2>Hanger & Cloth</h2>
+                <h1>Navi Lightweight French Terry Sweater</h1>
+                <h4>$ 70.00</h4>
+                <p>Tax included</p>
+                <h5>Color</h5>
+                <div class="detail-item-container">
+                    @for (int i = 0; i < 3; i++)
+                    {
+                        <div class="color-item" style="background-color:red">
+
+                        </div>
+                    }
+                </div>
+                <h5>Size</h5>
+                <div class="detail-item-container">
+                    @for (int i = 0; i < 3; i++)
+                    {
+                        <a class="size-item">
+                            S
+                        </a>
+                    }
+                </div>
+                <div>
+                    <button id="button-padding">Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html5>

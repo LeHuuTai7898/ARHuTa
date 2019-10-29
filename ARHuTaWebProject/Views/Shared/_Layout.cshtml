@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/MainSite.css" rel="stylesheet" />
+    <style type="text/css">
+        @@font-face {
+            font-family: 'Futura';
+            src: url('../../fonts/Futura Light font.ttf')
+        }
+
+        .classname {
+            font-family: 'Futura';
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="margin-all">
+        <!-- header -->
+        <div class="header-table-bar">
+            <div class="header-navbar">
+                <ul>
+                    <li>
+                        @Html.ActionLink("Login", "Login", "Home")
+                    </li>
+                    <li>or</li>
+                    <li>
+                        @Html.ActionLink("Create account", "CreateAccout", "Home")
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <img id="icon-a-link" src="~/Content/Images/shopping-cart.png" />
+                        </a>
+                        <a>Cart:</a>
+                        <span>1</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-banner">
+            <div id="header-banner-logo-text">
+
+                @Html.ActionLink("ARHUTA", "Index", "Home")
+            </div>
+            <div id="header-banner-sologan-text">
+
+                @Html.ActionLink("BEST T-SHIRT VIETNAM", "Index", "Home")
+            </div>
+            <div class="header-banner">
+                <ul>
+                    <li>
+                        @Html.ActionLink("MEN", "Men", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("WOMEN","Women","Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("ABOUT","About","Home")
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid body-content">
+
+            @RenderBody()
+            <hr />
+
+        </div>
+
+
+        <div id="deliver" />
+
+        <!-- <footer> -->
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div id="alignment-text-left-right">
+                        <h1>
+                            Subscribe to our newsletter.
+                        </h1>
+                        <p>
+                            View promotions and new releases sent directly to your inbox. Plus, you'll receive 10% off your first order.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <div id="alignment-text-left-right">
+                        <input id="typing-common" type="text" placeholder="Your Email">
+
+                        <button id="button-common">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="deliver">
+                <hr />
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p id="title">Links</p>
+                    <ul>
+                        <li>
+                            <a href="">SEARCH</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>Follow Us</p>
+                    <a href="">
+                        <img src="~/Content/Images/facebook-app-logo.png" id="icon-button" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-last">
+                <ul>
+                    <li>
+                        <p>Copyright 2019</p>
+                    </li>
+                    <li>
+                        <a href="">Mạc Mi |</a>
+                    </li>
+                    <li>
+                        <a href="">Lê Hữu Tài |</a>
+                    </li>
+                    <li>
+                        <a href="">Bùi Thị Thanh Thanh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

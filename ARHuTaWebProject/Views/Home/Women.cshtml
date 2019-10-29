@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - WOMEN</title>
+    <link href="~/Content/MainSite.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="title">
+        <p>WOMEN</p>
+    </div>
+    <div>
+        @for (int i = 0; i < 5; i++)
+        {
+        <div class="new-colors">
+            @for (int j = 0; j < 5; j++)
+            {
+                <a href="@Url.Action("ProductDetail","Home")" class="fiexed">
+                    <div class="fiexed">
+                        <img src="~/Content/Images/t-shirt-3.jpg" />
+
+                        <div>
+                            <h4>Navy Lightweight French Terry Swealer</h4>
+                            <p>$ 70.00</p>
+                        </div>
+                    </div>
+                </a>
+                }
+            </div>
+        }
+    </div>
+</body>
+</html>

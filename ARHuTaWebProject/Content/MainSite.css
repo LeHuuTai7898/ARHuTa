@@ -1,0 +1,587 @@
+﻿/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* RESET CSS */
+
+html {
+    color: white;
+    font-family: 'Futura';
+}
+
+body {
+    font-family: Futura,sans-serif;
+    background: white;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    display: block;
+}
+
+.margin-all {
+    margin: 32px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+ul {
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.header-table-bar {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+.header-navbar {
+    display: inline;
+    list-style: none;
+    color: black;
+    text-align: right;
+}
+
+    .header-navbar li {
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+    }
+
+#icon-a-link {
+    margin-left: 16px;
+    height: 26px;
+    width: 26px;
+}
+
+.header-banner {
+    display: block;
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    text-align: center;
+}
+
+#header-banner-logo-text {
+    font-size: 56px;
+}
+
+#header-banner-sologan-text {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.header-banner ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner li {
+    display: inline-block;
+}
+
+    .header-banner li a {
+        padding-left: 16px;
+        padding-right: 16px;
+        color: black;
+        text-decoration: none;
+    }
+
+        .header-banner li a:hover {
+            color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+
+        .header-banner li a:active {
+            color: black;
+            text-decoration: none;
+        }
+
+.page-view {
+    display: block;
+}
+
+    .page-view img {
+        width: 100%;
+    }
+
+.product-top {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+    .product-top #product-top-1 {
+        float: left;
+        width: 49%;
+    }
+
+    .product-top #product-top-2 {
+        float: right;
+        width: 49%;
+    }
+
+    .product-top img {
+        width: 100%;
+    }
+
+
+.title-row {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: inline-block;
+    color: black;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+
+.footer {
+    display: block;
+    width: 100%;
+    margin-top: 46px;
+}
+
+.footer-top {
+    width: 100%;
+    height: 150px;
+}
+
+.footer-top-left {
+    height: 100%;
+    display: block;
+    float: left;
+    width: 50%;
+    background: #F5F5F4;
+    color: black;
+    font-weight: 100;
+}
+
+#alignment-text-left-right {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.footer-top-left h1 {
+    margin-top: 32px;
+    color: black;
+    font-weight: 100;
+    height: 100%;
+    font-size: 36px;
+}
+
+.footer-top-left p {
+    margin-top: 12px;
+    color: black;
+    font-size: 18px;
+}
+
+
+.footer-top-right {
+    height: 100%;
+    float: right;
+    width: 50%;
+    background: #EAEBEA;
+}
+
+    .footer-top-right p {
+        color: black;
+    }
+
+#typing-common {
+    margin-top: 32px;
+    width: 100%;
+    height: 32px;
+    font-size: 20px;
+}
+
+#button-common {
+    margin-top: 12px;
+    background: #B9B9B9;
+    color: white;
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+#deliver {
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.footer-bottom {
+    height: 150px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    width: 100%;
+    color: white;
+}
+
+.footer-bottom-right {
+    float: right;
+    width: 50%;
+    color: black;
+    font-weight: 100;
+}
+
+.footer-bottom-left {
+    float: left;
+    width: 50%;
+    font-weight: 100;
+}
+
+#title {
+    /* margin-top: 32px; */
+    margin-bottom: 18px;
+    font-size: 28px;
+    font-weight: 100;
+    color: grey;
+}
+
+.footer-bottom-left li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+    .footer-bottom-left li a {
+        font-size: 16px;
+    }
+
+        .footer-bottom-left li a:hover {
+            color: rgba(0, 0, 0, 0.3)
+        }
+
+#icon-button {
+    margin-top: 12px;
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-last {
+    display: inline;
+    list-style: none;
+    color: black;
+    text-align: center;
+}
+
+    .footer-last li {
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+    }
+
+        .footer-last li a {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+            .footer-last li a:hover {
+                color: rgba(0, 0, 0, 0.3);
+            }
+
+        .footer-last li p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+.show-detail-sample {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .show-detail-sample #left {
+        width: 50%;
+    }
+
+        .show-detail-sample #left img {
+            width: 90%;
+        }
+
+    .show-detail-sample #right {
+        width: 45%;
+    }
+
+        .show-detail-sample #right h2 {
+            margin: 16px;
+            font-size: 42px;
+            color: black;
+        }
+
+        .show-detail-sample #right p {
+            margin: 16px;
+            color: black;
+            font-size: 16px;
+        }
+
+#common-button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: white;
+    background: #B9B9B9;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 32px;
+    color: black;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.sub-title {
+    font-size: 16px;
+    color: grey;
+    margin-top: 12px;
+}
+
+.login-form {
+    justify-content: start;
+    color: black;
+    width: 100%;
+    display: block;
+}
+
+    .login-form input {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: black;
+    }
+
+.register {
+    color: #b9b9b9
+}
+
+    .register a {
+        text-decoration: none;
+        color: #b9b9b9
+    }
+
+        .register a:hover {
+            text-decoration: none;
+            color: #b9b9b9
+        }
+
+        .register a:visited {
+            text-decoration: none;
+            color: #b9b9b9
+        }
+
+        .register a:active {
+            text-decoration: none;
+            color: #b9b9b9
+        }
+
+.new-colors {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .new-colors .fiexed {
+        display: inline;
+        margin: 5px;
+        text-align: center;
+    }
+
+        .new-colors .fiexed img {
+            width: 100%;
+        }
+
+        .new-colors .fiexed h4 {
+            font-size: 1.25em;
+            color: black;
+        }
+
+        .new-colors .fiexed p {
+            font-size: 0.8em;
+            color: gray
+        }
+
+
+
+.about {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .about .spacer {
+        height: 80px;
+        width: 100%;
+    }
+
+
+/*detail product*/
+
+.detail {
+    width: 100%;
+    display: flex;
+}
+
+    .detail .image-product {
+        width: 40%;
+    }
+
+    .detail img {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .detail .list-image-product {
+        width: 10%;
+        margin-left: 5px;
+    }
+
+    .detail .info-product {
+        width: 50%;
+        margin-left: 12px;
+    }
+
+        .detail .info-product h2 {
+            font-size: 2em;
+        }
+
+        .detail .info-product h1 {
+            font-size: 2.5em;
+        }
+
+        .detail .info-product h4 {
+            font-size: 1.2em;
+            margin-top: 12px;
+            color: grey;
+        }
+
+        .detail .info-product h5 {
+            margin-top: 24px;
+            font-size: 1em;
+            color: black;
+        }
+
+        .detail .info-product p {
+            font-size: 0.9em;
+            color: black;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .detail .info-product .detail-item-container {
+            width: 100%;
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .detail .info-product .color-item {
+            width: 10%;
+            padding-top: 10%;
+            position: relative;
+            margin: 8px;
+        }
+
+        .detail .info-product .size-item {
+            width: 10%;
+            padding-top: 2.5%;
+            padding-bottom:2.5%;
+            position: relative;
+            margin: 8px;
+            border: 2px solid black;
+            border-radius: 4px;
+            text-align: center;
+            font-size:1.5em;
+            font-weight: bold;
+        }
+
+#button-padding {
+    width:45%;
+    margin-top: 12px;
+    background: #B9B9B9;
+    color: white;
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+}

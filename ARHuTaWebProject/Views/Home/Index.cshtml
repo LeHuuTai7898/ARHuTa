@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Home</title>
+    <link href="~/Content/MainSite.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="page-view">
+
+        <img src="~/Content/Images/slide-1.jpg" />
+        @*<div id="ARHuTaWebProject" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#ARHuTaWebProject" data-slide-to="0" class="active"></li>
+                    <li data-target="#ARHuTaWebProject" data-slide-to="1"></li>
+                    <li data-target="#ARHuTaWebProject" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner" role="listbox">
+                    @{int i = 0;}
+                    @foreach (var item in ViewData["SlidesSrc"] as List<String>)
+                    {
+                        i++;
+                        var active = i == 1 ? "active" : "";
+                        <div class="carousel-item @active">
+                            <img src="@Url.Content(@item)" alt="">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#ARHuTaWebProject" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#ARHuTaWebProject" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>*@
+    </div>
+    <!-- product top -->
+    <div class="product-top">
+        <div id="product-top-1">
+            <a href="">
+                <img src="~/Content/Images/t-shirt-1.jpg" />
+            </a>
+        </div>
+        <div id="product-top-2">
+            <a href="">
+                <img src="~/Content/Images/t-shirt-2.jpg" />
+            </a>
+        </div>
+    </div>
+    <!-- row -->
+    <div class="title-row">
+        <h2> NEW COLORS</h2>
+
+    </div>
+    <div class="new-colors">
+        @for (int i = 0; i < 3; i++)
+        {
+        <a href="@Url.Action("ProductDetail","Home")" class="fiexed">
+            <div class="fiexed">
+                <img src="~/Content/Images/t-shirt-3.jpg" />
+
+                <div>
+                    <h4>Navy Lightweight French Terry Swealer</h4>
+                    <p>$ 70.00</p>
+                </div>
+            </div>
+        </a>
+        }
+    </div>
+    <div class="new-colors">
+        @for (int i = 0; i < 3; i++)
+        {
+            <a href="@Url.Action("ProductDetail","Home")" class="fiexed">
+                <div class="fiexed">
+                    <img src="~/Content/Images/t-shirt-3.jpg" />
+
+                    <div>
+                        <h4>Navy Lightweight French Terry Swealer</h4>
+                        <p>$ 70.00</p>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+    <div class="divider">
+
+    </div>
+    <!-- good model -->
+    <div class="show-detail-sample">
+        <div id="left">
+            <img src="~/Content/Images/t-shirt-5.jpg" />
+        </div>
+        <div id="right">
+            <h2>organic french terry</h2>
+            <p>A lightweight fabric built for summer.</p>
+            <button id="common-button">READ MORE</button>
+        </div>
+    </div>
+
+</body>
+</html>

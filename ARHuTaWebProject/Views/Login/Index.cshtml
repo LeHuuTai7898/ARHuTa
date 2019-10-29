@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - Login</title>
+    <link href="~/Content/MainSite.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div>
+            <div class="title"><p>Login</p></div>
+            <div class="register">
+                <div class="login-form">
+                    <div>
+                        <input type="email" name="email" placeholder="Email">
+
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+
+                    <div class="sub-title">
+                        @Html.ActionLink("Forgot your password?", "ForgotPassword", "Login")
+                    </div>
+                    <div>
+                        <button id="common-button">Sign In</button>
+                    </div>
+                    <div class="sub-title">
+                        @Html.ActionLink("Create account", "CreateAccount", "Login")
+                    </div>
+                    <div class="sub-title">
+                        @Html.ActionLink("Return to store", "ReturnToStore", "Login")
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+           
+    </body>
+    </html>
